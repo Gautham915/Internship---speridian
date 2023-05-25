@@ -1,0 +1,35 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["Hello","Hi","hey","greetings","Begin","Start"],
+    "responses": ["Hello I am Pybot . How can I help you?","Good day.How may yours truly help you?","Hola Amigo","Namaskaram"]},
+
+    {"tag": "me",
+    "patterns": ["Who are you","you","self","your name","name"],
+    "responses": ["My name is Pybot"]},
+
+    {"tag": "goodbye",
+    "patterns": ["Bye","End","Terminate","goodbye","I am leaving","see ya","ok bye","exit"],
+    "responses": ["Goodbye!","Bye","Bye.Have a nice day"]},
+
+    {"tag": "thriller_movies",
+    "patterns":["give me a thriller movie recommendation","give me a thriller movie","name a thriller cinema","thriller genre movie","suspense cinema","movie with twist","edge of the seat movie"],
+    "responses":["Drishyam","Fight Club","Memento","Kahaani","The Prestige","Shutter Island","Se7en","Inception","Manichitrathazhu","Oldboy"]},
+
+    {"tag": "romance_movies",
+    "patterns":["give me a romance movie recommendation","give me a romantic movie","name a romance cinema","romance genre movie","romantic movie","cinema with love"],
+    "responses":["Premam","Hridhayam","DDLJ","YJHD","Sita Ramam","Thoovanathumbikal","96","OK Kanmani","Bombay","3"]},
+    
+    {"tag": "drama_movies",
+    "patterns":["give me a drama movie recommendation","give me a drama movie","name a drama cinema","drama genre movie","drama movie","cinema with drama"],
+    "responses":["Chitram","Lucifer","Iruvar","Sadayam","Irumbuthirai","Adam Joan","1917","Avatar","Joker","The Dark Knight","The Wolf Of Wall Street"]},
+
+    {"tag": "favourites",
+    "patterns":["Name your favourite movies","Your favorite cinemas","your fav movies","fav","your fav"],
+    "responses":["American Psycho\nTaxi Driver\nDasharatham\nA Clockwork Orange\nThe Godfather 1 & 2\n"]},
+
+    {"tag": "mohanlal_movies",
+    "patterns":["best mohanlal movies","mohanlal cinema","lalettan movies","A10 movies","mohanlal"],
+    "responses":["Dasharatham\nDevasuram\nSadayam\nDevadoothan\nChitram\nThalavattam\nThanmathra\nDrishyam\nKireedam"]}
+
+
+]}
