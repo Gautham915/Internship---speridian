@@ -5,7 +5,7 @@
     --left-msg-bg: #ececec;
     --right-msg-bg: #579ffb;
   }
-  
+ 
   html {
     box-sizing: border-box;
   }
@@ -28,8 +28,28 @@
     height: 47vh;
     background-image: var(--body-bg);
     font-family: Helvetica, sans-serif;
+    color:black;;
   }
-  
+  .logo--button{
+    position: fixed;
+   border: none;
+   cursor: pointer;
+   background: transparent;
+   margin: 2rem;
+  transform: scale(1);
+  }
+  .logo--button img{
+    width:50px;
+    padding: 1px;
+   
+  }
+  .logo--button.active{
+ 
+   transform: scale(0);
+
+  }
+
+
   .msger {
     display: flex;
     flex-flow: column wrap;
@@ -37,24 +57,49 @@
     width: 295px;
     max-width: 295px;
     margin: 15px 5px;
-    height: 370px;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    height: 25rem;
     border: var(--border);
     border-radius: 5px;
     background: var(--msger-bg);
     box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+    transform: scale(0);
   }
   
+  .msger.active {
+
+    transform: scale(1);
+  }
+
+
+
+
+
+
+
   .msger-header {
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
     font-size: medium;
-    justify-content: space-between;
-    padding: 5px;
+   justify-content: space-between;
+   
     text-align: center;
     border-bottom: var(--border);
     background: #eee;
     color: #666;
   }
   
+  .msger-header button
+  {
+    border: none;
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+
   .msger-chat {
     flex: 1;
     overflow-y: auto;
