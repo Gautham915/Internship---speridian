@@ -47,15 +47,14 @@
   }
   
   body {
-    position:fixed;
-    display: flex;
-    flex-direction: column;
+     margin: 1rem;
     justify-content: center;
     align-items:center;
     height: 47vh;
     background-image: url("static/bg1.png");
     font-family: Helvetica, sans-serif;
-    color:black;;
+    color:black;
+    line-height: 1.5em;
   }
   .logo--button{
     position: fixed;
@@ -75,9 +74,20 @@
    transform: scale(0);
 
   }
+.btn--navbar{
+  padding:0.5rem;
+  background-color: darkblue;
+  border:none;
 
 
+}
+section{
+  margin-top:2rem;
+
+}
   .msger {
+    position:fixed;
+    
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -94,17 +104,47 @@
     transform: scale(0);
   }
   
+  .image-wrapper{
+    margin-top: 2rem;;
+  }
+   
+   
+  .main--img{
+    margin-left: 25% ;
+  
+    
+  }
   .msger.active {
 
     transform: scale(1);
   }
 
+  .navbar--container{
+   display:flex;
+   justify-content: space-between;
+   margin:1rem;
+  
+  }
 
+  .navbar-brand{
+    font-size: 27px;
+    color: darkblue;
+  }
+  .navbar--container ul{
+    display: flex;
+    
+  }
 
-
-
-
-
+  .navbar--container li{
+      margin:0.5em;
+      list-style: none;
+      color: black;
+      
+  }
+  .navbar--container a{
+    text-decoration: none;
+    color:white;
+  }
   .msger-header {
     display: flex;
     align-items: center;
@@ -233,16 +273,25 @@
   <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container">
+        <div class="navbar--container">
             <div class="navbar-brand">
-                
+                PyBot
                 
             </div>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right navbar-nav-top-padding" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">Menu Item 1</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">
-                            Menu Item 2</a></li></ul>
+                <ul class="navbar-nav nav-dropdown nav-right navbar-nav-top-padding" data-app-modern-menu="true">
+                  <li class="nav-item">
+                    <button class="btn--navbar">
+                      <a class="nav-link link text-black display-4" href="https://mobirise.com">Menu Item 1</a></button>
+                  </li>
+                  <li class="nav-item">
+                     <button class="btn--navbar">
+                      <a class="nav-link link text-black display-4" href="https://mobirise.com">
+                            Menu Item 2</a>
+                       </button>  
+                   </li>
+                 </ul>
                 
                 
             </div>
@@ -299,7 +348,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
                 <div class="image-wrapper">
-                    <img src="assets/images/bg2-1024x1024.jpg" alt="Mobirise Website Builder">
+                    <img src="../static/bg2-1024x1024.jpg" alt="Mobirise Website Builder" class="main--img">
                     <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">
                         Image Description</p>
                 </div>
@@ -366,162 +415,161 @@
 
 <section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
 
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="row row-links">
-                <ul class="foot-menu">
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row row-links">
+                    <ul class="foot-menu">
+                </div>
             </div>
-            
-            
         </div>
-    </div>
-<script src="assets/static/js/bootstrap.bundle.min.js"></script>  <script src="assets/static/js/jarallax.js"></script>  <script src="assets/static/js/smooth-scroll.js"></script>  <script src="assets/static/js/index.js"></script>  <script src="assets/static/js/navbar-dropdown.js"></script>  <script src="assets/static/js/script.js"></script>  
+        <script src="assets/static/js/bootstrap.bundle.min.js"></script>  <script src="assets/static/js/jarallax.js"></script>  
+        <script src="assets/static/js/smooth-scroll.js"></script>  <script src="assets/static/js/index.js"></script>  
+        <script src="assets/static/js/navbar-dropdown.js"></script>  <script src="assets/static/js/script.js"></script>  
 
-  <!-- partial:index.partial.html -->
-  <button data-modal-target="#msger" id="logo--button" class="logo--button">
-    <img src="static/messenger.png" alt="Pybot">
-  </button>
-  <section class="msger" id="msger">
+        <!-- partial:index.partial.html -->
+        <button data-modal-target="#msger" id="logo--button" class="logo--button">
+          <img src="../static/messenger.png" alt="Pybot">
+        </button>
+
+
+
+        <section class="msger" id="msger">
     
-    <header class="msger-header" >
-      <div class="msger-header-title">
-        <i class="fas fa-bug"></i> Pybot <i class="fas fa-bug"></i>
-      </div>
-     <button  class="close--button" id="close--button">&times;</button>
-    </header>
+              <header class="msger-header" >
+                <div class="msger-header-title">
+                  <i class="fas fa-bug"></i> Pybot <i class="fas fa-bug"></i>
+                </div>
+              <button  class="close--button" id="close--button">&times;</button>
+              </header>
 
-    <main class="msger-chat">
-      <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+               <main class="msger-chat">
+                  <div class="msg left-msg">
+                    <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
 
-        <div class="msg-bubble">
-          <div class="msg-info">
-            <div class="msg-info-name">Pybot</div>
-            <div class="msg-info-time"></div>
-          </div>
+                    <div class="msg-bubble">
+                      <div class="msg-info">
+                        <div class="msg-info-name">Pybot</div>
+                        <div class="msg-info-time"></div>
+                      </div>
 
-          <div class="msg-text">
-            Hi, welcome to PyBot!😄
-          </div>
-        </div>
-      </div>
+                      <div class="msg-text">
+                        Hi, welcome to PyBot!😄
+                      </div>
+                    </div>
+                  </div>
 
-    </main>
+              </main>
 
-    <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
-      <button type="submit" class="msger-send-btn">Send</button>
-    </form>
-  </section>
-
-
-
-  <!-- partial -->
-  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
-  <script>
-
-    const msgerForm = get(".msger-inputarea");
-    const msgerInput = get(".msger-input");
-    const msgerChat = get(".msger-chat");
-
-
-    // Icons made by Freepik from www.flaticon.com
-    const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
-    const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-    const BOT_NAME = "ChatBot";
-    const PERSON_NAME = "You";
-
-    msgerForm.addEventListener("submit", event => {
-      event.preventDefault();
-
-      const msgText = msgerInput.value;
-      if (!msgText) return;
-
-      appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
-      msgerInput.value = "";
-      botResponse(msgText);
-    });
-
-    function appendMessage(name, img, side, text) {
-      //   Simple solution for small apps
-      const msgHTML = `
-<div class="msg ${side}-msg">
-  <div class="msg-img" style="background-image: url(${img})"></div>
-  <div class="msg-bubble">
-    <div class="msg-info">
-      <div class="msg-info-name">${name}</div>
-      <div class="msg-info-time">${formatDate(new Date())}</div>
-    </div>
-    <div class="msg-text">${text}</div>
-  </div>
-</div>
-`;
-
-      msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-      msgerChat.scrollTop += 500;
-    }
-
-    function botResponse(rawText) {
-
-      // Bot Response
-      $.get("/get", { msg: rawText }).done(function (data) {
-        console.log(rawText);
-        console.log(data);
-        const msgText = data;
-        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-
-      });
-
-    }
-
-
-    // Utils
-    function get(selector, root = document) {
-      return root.querySelector(selector);
-    }
-
-    function formatDate(date) {
-      const h = "0" + date.getHours();
-      const m = "0" + date.getMinutes();
-
-      return `${h.slice(-2)}:${m.slice(-2)}`;
-    }
+              <form class="msger-inputarea">
+                <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+                <button type="submit" class="msger-send-btn">Send</button>
+              </form>
+        </section>
 
 
 
-  </script>
-<script src="script.js"></script>
-<script>
-    const logoButton= document.querySelectorAll('[data-modal-target]')
-const closeButton= document.getElementById("close--button")
-logoButton.forEach(button =>{
-    button.addEventListener('click', () =>{
-        const msger = document.querySelector(button.dataset.modalTarget)
-        openModal(msger)
-    })
-})
+          <!-- partial -->
+          <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+          <script>
 
-closeButton.addEventListener('click', () =>{
-    const msger = closeButton.closest('.msger')
-    msger.classList.remove('active')
-    document.getElementById("logo--button").className="logo--button"
-}) 
- 
+                              const msgerForm = get(".msger-inputarea");
+                              const msgerInput = get(".msger-input");
+                              const msgerChat = get(".msger-chat");
 
-function openModal(msger) {
-    if (msger == null)
-     return
-    else
-    {
-  msger.classList.add('active');
-   document.getElementById("logo--button").className="logo--button active"
-}
-  }
-</script>
+
+                              // Icons made by Freepik from www.flaticon.com
+                              const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
+                              const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
+                              const BOT_NAME = "ChatBot";
+                              const PERSON_NAME = "You";
+
+                              msgerForm.addEventListener("submit", event => {
+                                event.preventDefault();
+
+                                const msgText = msgerInput.value;
+                                if (!msgText) return;
+
+                                appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+                                msgerInput.value = "";
+                                botResponse(msgText);
+                              });
+
+                              function appendMessage(name, img, side, text) {
+                                //   Simple solution for small apps
+                                const msgHTML = `
+                          <div class="msg ${side}-msg">
+                            <div class="msg-img" style="background-image: url(${img})"></div>
+                            <div class="msg-bubble">
+                              <div class="msg-info">
+                                <div class="msg-info-name">${name}</div>
+                                <div class="msg-info-time">${formatDate(new Date())}</div>
+                              </div>
+                              <div class="msg-text">${text}</div>
+                            </div>
+                          </div>
+                          `;
+
+                                msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+                                msgerChat.scrollTop += 500;
+                              }
+
+                              function botResponse(rawText) {
+
+                                // Bot Response
+                                $.get("/get", { msg: rawText }).done(function (data) {
+                                  console.log(rawText);
+                                  console.log(data);
+                                  const msgText = data;
+                                  appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+
+                                });
+
+                              }
+
+
+                              // Utils
+                              function get(selector, root = document) {
+                                return root.querySelector(selector);
+                              }
+
+                              function formatDate(date) {
+                                const h = "0" + date.getHours();
+                                const m = "0" + date.getMinutes();
+
+                                return `${h.slice(-2)}:${m.slice(-2)}`;
+                              }
+
+
+
+          </script>
+          <script src="script.js"></script>
+          <script>
+                      const logoButton= document.querySelectorAll('[data-modal-target]')
+                  const closeButton= document.getElementById("close--button")
+                  logoButton.forEach(button =>{
+                      button.addEventListener('click', () =>{
+                          const msger = document.querySelector(button.dataset.modalTarget)
+                          openModal(msger)
+                      })
+                  })
+
+                  closeButton.addEventListener('click', () =>{
+                      const msger = closeButton.closest('.msger')
+                      msger.classList.remove('active')
+                      document.getElementById("logo--button").className="logo--button"
+                  }) 
+                  
+
+                  function openModal(msger) {
+                      if (msger == null)
+                      return
+                      else
+                      {
+                    msger.classList.add('active');
+                    document.getElementById("logo--button").className="logo--button active"
+                  }
+                    }
+            </script>
 </body>
 
 </html>
